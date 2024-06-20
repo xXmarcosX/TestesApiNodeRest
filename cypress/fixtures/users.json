@@ -1,0 +1,64 @@
+{
+    "users": [
+        {
+            "name": "edu",
+            "email": "edu@gmail.com",
+            "password": "$2a$10$5NbvrP4N9rSpHwoGrC34VuU7iR3lwSyME5rx067S36Yos1K5QMHMa",
+            "cpf": "12345678",
+            "logradouro": "Rua Mariano Procópio",
+            "bairro": "Santo Cristo",
+            "localidade": "Rio de Janeiro",
+            "uf": "RJ"
+        },
+        {
+            "name": "pablo",
+            "email": "pablo@gmail.com",
+            "password": "$2a$10$5NbvrP4N9rSpHwoGrC34VuU7iR3lwSyME5rx067S36Yos1K5QMHMa",
+            "cpf": "12345678",
+            "logradouro": "Rua Mariano Procópio",
+            "bairro": "Santo Cristo",
+            "localidade": "Rio de Janeiro",
+            "uf": "RJ"
+        },
+        {
+            "name": "Gustavo",
+            "email": "gustavo@gmail.com",
+            "password": "$2a$10$5NbvrP4N9rSpHwoGrC34VuU7iR3lwSyME5rx067S36Yos1K5QMHMa",
+            "cpf": "12345678",
+            "logradouro": "Rua Mariano Procópio",
+            "bairro": "Santo Cristo",
+            "localidade": "Rio de Janeiro",
+            "uf": "RJ"
+        },
+        {
+            "name": "Juan",
+            "email": "juan@gmail.com",
+            "password": "$2a$10$5NbvrP4N9rSpHwoGrC34VuU7iR3lwSyME5rx067S36Yos1K5QMHMa",
+            "cpf": "12345678",
+            "logradouro": "Rua Mariano Procópio",
+            "bairro": "Santo Cristo",
+            "localidade": "Rio de Janeiro",
+            "uf": "RJ"
+        },
+        {
+            "name": "Guilherme",
+            "email": "guilherme@gmail.com",
+            "password": "$2a$10$5NbvrP4N9rSpHwoGrC34VuU7iR3lwSyME5rx067S36Yos1K5QMHMa",
+            "cpf": "12345678",
+            "logradouro": "Rua Mariano Procópio",
+            "bairro": "Santo Cristo",
+            "localidade": "Rio de Janeiro",
+            "uf": "RJ"
+        },
+        {
+            "name": "Geovany",
+            "email": "geovany@gmail.com",
+            "password": "$2a$10$5NbvrP4N9rSpHwoGrC34VuU7iR3lwSyME5rx067S36Yos1K5QMHMa",
+            "cpf": "12345678",
+            "logradouro": "Rua Mariano Procópio",
+            "bairro": "Santo Cristo",
+            "localidade": "Rio de Janeiro",
+            "uf": "RJ"
+        }
+    ]
+}

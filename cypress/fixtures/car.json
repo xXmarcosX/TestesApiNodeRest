@@ -1,280 +1,366 @@
 {
-    "carros": [
-        {
-            "mark": "BMW",
-            "model": "i8",
-            "image": "https://quatrorodas.abril.com.br/wp-content/uploads/2016/11/5755de9f0e2163457509534bqr-681-carro-i8-01-tif-e1524174428368.jpeg?quality=70&strip=info&w=720&crop=1",
-            "price": 800000,
-            "plate": "HUU0656",
-            "color": "prata",
-            "releaseDate": "2017"
-        },
-        {
-            "mark": "BMW",
-            "model": "M3 Competition",
-            "image": "data:image/jpeg;base64,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",
-            "price": 830000,
-            "plate": "HUU0656",
-            "color": "verde",
-            "releaseDate": "2024"
-        },
-        {
-            "mark": "BMW",
-            "model": "M4",
-            "image": "https://carrosbemmontados.com.br/wp-content/uploads/2023/04/bmw-m4-csl-2023-gtr2-1.jpg",
-            "price": 500000,
-            "plate": "HUU0656",
-            "color": "branca",
-            "releaseDate": "2021"
-        },
-        {
-            "mark": "BMW",
-            "model": "Serie 4 M Sport",
-            "image": "https://s2-autoesporte.glbimg.com/TbARKAmEexj2a-HTJKAHf9EbPgY=/0x0:620x413/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2020/Z/k/TFB7rzSA6tOrPR9AGKVA/2020-06-01-bmw-serie-4-8.jpg",
-            "price": 460000,
-            "plate": "HUU0656",
-            "color": "prata",
-            "releaseDate": "2023"
-        },
-        {
-            "mark": "BMW",
-            "model": "X1",
-            "image": "https://t.ctcdn.com.br/UcwF_siXWW2zhJJwpBygVehinuE=/1024x576/smart/i695608.jpeg",
-            "price": 300000,
-            "plate": "HUU0656",
-            "color": "branca",
-            "releaseDate": "2023"
-        },
-        {
-            "mark": "BMW",
-            "model": "X5",
-            "image": "https://cdn.motor1.com/images/mgl/6MRKb/s1/bmw-x5-m-2020-im-test.jpg",
-            "price": 750000,
-            "plate": "HUU0656",
-            "color": "preto",
-            "releaseDate": "2024"
-        },
+  "carros": [
+    {
+      "mark": "BMW",
+      "model": "i8",
+      "image": "https://quatrorodas.abril.com.br/wp-content/uploads/2016/11/5755de9f0e2163457509534bqr-681-carro-i8-01-tif-e1524174428368.jpeg?quality=70&strip=info&w=720&crop=1",
+      "price": 800000,
+      "plate": "HUU0656",
+      "color": "prata",
+      "releaseDate": "2017",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "BMW",
+      "model": "M3 Competition",
+      "image": "data:image/jpeg;base64,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",
+      "price": 830000,
+      "plate": "HUU0656",
+      "color": "verde",
+      "releaseDate": "2024",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "BMW",
+      "model": "M4",
+      "image": "https://carrosbemmontados.com.br/wp-content/uploads/2023/04/bmw-m4-csl-2023-gtr2-1.jpg",
+      "price": 500000,
+      "plate": "HUU0656",
+      "color": "branca",
+      "releaseDate": "2021",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "BMW",
+      "model": "Serie 4 M Sport",
+      "image": "https://s2-autoesporte.glbimg.com/TbARKAmEexj2a-HTJKAHf9EbPgY=/0x0:620x413/924x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2020/Z/k/TFB7rzSA6tOrPR9AGKVA/2020-06-01-bmw-serie-4-8.jpg",
+      "price": 460000,
+      "plate": "HUU0656",
+      "color": "prata",
+      "releaseDate": "2023",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "BMW",
+      "model": "X1",
+      "image": "https://t.ctcdn.com.br/UcwF_siXWW2zhJJwpBygVehinuE=/1024x576/smart/i695608.jpeg",
+      "price": 300000,
+      "plate": "HUU0656",
+      "color": "branca",
+      "releaseDate": "2023",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "BMW",
+      "model": "X5",
+      "image": "https://cdn.motor1.com/images/mgl/6MRKb/s1/bmw-x5-m-2020-im-test.jpg",
+      "price": 750000,
+      "plate": "HUU0656",
+      "color": "preto",
+      "releaseDate": "2024",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
 
-        {
-            "mark": "Aston Martin",
-            "model": "v12 Vantage S",
-            "image": "https://i.pinimg.com/736x/52/30/d1/5230d1bff65541b3da5a89fc5f4a3b6f.jpg",
-            "price": 265000,
-            "plate": "HUU0656",
-            "color": "prata",
-            "releaseDate": "2015 "
-        },
-        {
-            "mark": "Aston Martin",
-            "model": "V8",
-            "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/1978_Aston_Martin_V8_%28Series_3%29_5340_cc_at_Horsham_English_Festival_2018_a.jpg",
-            "price": 2000000,
-            "plate": "HUU0656",
-            "color": "prata",
-            "releaseDate": "2016"
-        },
-        {
-            "mark": "Aston Martin",
-            "model": "DB9",
-            "image": "https://images.collectingcars.com/019609/main.jpg?w=1263&fit=fillmax&crop=edges&auto=format,compress&cs=srgb&q=85",
-            "price": 1800000,
-            "plate": "HUU0656",
-            "color": "prata",
-            "releaseDate": "2017"
-        },
-        {
-            "mark": "Aston Martin",
-            "model": "DBX",
-            "image": "https://news.dupontregistry.com/wp-content/uploads/2023/07/2023-aston-martin-dbx-707-scaled.jpg",
-            "price": 1000000,
-            "plate": "HUU0656",
-            "color": "branca",
-            "releaseDate": "2024"
-        },
-        {
-            "mark": "Aston Martin",
-            "model": "Rapide",
-            "image": "https://image1.mobiauto.com.br/images/api/images/v1.0/221386873/transform/fl_progressive,f_webp,q_80",
-            "price": 1300000,
-            "plate": "HUU0656",
-            "color": "preto",
-            "releaseDate": "2015"
-        },
-        {
-            "mark": "Aston Martin",
-            "model": "Vanquish",
-            "image": "https://istoedinheiro.com.br/wp-content/uploads/sites/17/2019/09/din1138-cobica1.jpg",
-            "price": 1400000,
-            "plate": "HUU0656",
-            "color": "prata",
-            "releaseDate": "2015"
-        },
-        {
-            "mark": "Volkswagen",
-            "model": "Golf",
-            "image": "https://cdn.motor1.com/images/mgl/y2pEzY/s3/vw-sondermodell-golf-edition-50.jpg",
-            "price": 180000,
-            "plate": "HUU0656",
-            "color": "azul",
-            "releaseDate": "2020"
-        },
-        {
-            "mark": "Volkswagen",
-            "model": "Nivus",
-            "image": "https://cdn.motor1.com/images/mgl/8wbyv/s3/vw-nivus-highline-2020-superteste.jpg",
-            "price": 110000,
-            "plate": "AKD4519",
-            "color": "cinza",
-            "releaseDate": "2024"
-        },
-        {
-            "mark": "Volkswagen",
-            "model": "Kombi",
-            "image": "https://quatrorodas.abril.com.br/wp-content/uploads/2016/11/57fd733a0e21630270073362qr-686-classicos-kombi-01.jpeg?quality=70&strip=all&strip=all",
-            "price": 50000,
-            "plate": "LVZ2036",
-            "color": "branca",
-            "releaseDate": "2014"
-        },
-        {
-            "mark": "Volkswagen",
-            "model": "Fox",
-            "image": "https://i0.statig.com.br/bancodeimagens/7o/4w/e3/7o4we3mo5no2ck2b0j1t98bwm.jpg",
-            "price": 60000,
-            "plate": "LVZ2036",
-            "color": "branca",
-            "releaseDate": "2012"
-        },
-        {
-            "mark": "Volkswagen",
-            "model": "Amarok",
-            "image": "https://quatrorodas.abril.com.br/wp-content/uploads/2020/11/QR_739_CARRO_AMAROK_V6-e1702318044633.jpg?quality=70&strip=info&w=720&h=440&crop=1",
-            "price": 230000,
-            "plate": "LVZ2036",
-            "color": "branca",
-            "releaseDate": "2014"
-        },
-        {
-            "mark": "Volkswagen",
-            "model": "Fusca",
-            "image": "https://lartbr.com.br/wp-content/uploads/2023/05/IMG_0443.jpg",
-            "price": 20000,
-            "plate": "LVZ2036",
-            "color": "azul",
-            "releaseDate": "1977"
-        },
-        {
-            "mark": "Audi",
-            "model": "A1",
-            "image": "https://cdn.motor1.com/images/mgl/e9vEV/s1/2019-audi-a1-sportback.jpg",
-            "price": 90000,
-            "plate": "LVZ2036",
-            "color": "branca",
-            "releaseDate": "2018"
-        },
-        {
-            "mark": "Audi",
-            "model": "S7",
-            "image": "https://media.autoexpress.co.uk/image/private/s--X-WVjvBW--/f_auto,t_content-image-full-desktop@1/v1563184356/autoexpress/s7-front-tracking_0.jpg",
-            "price": 360000,
-            "plate": "LVZ2036",
-            "color": "prata",
-            "releaseDate": "2016"
-        },
-        {
-            "mark": "Audi",
-            "model": "S8",
-            "image": "https://revistacarro.com.br/wp-content/uploads/2020/06/audi-s8-abt-2020.jpg",
-            "price": 670000,
-            "plate": "LVZ2036",
-            "color": "cinza",
-            "releaseDate": "2017"
-        },
-        {
-            "mark": "Audi",
-            "model": "Q8",
-            "image": "https://cdn.motor1.com/images/mgl/NGOY1b/s1/audi-q8-2023.jpg",
-            "price": 600000,
-            "plate": "LVZ2036",
-            "color": "azul",
-            "releaseDate": "2023"
-        },
-        {
-            "mark": "Audi",
-            "model": "RS Q3",
-            "image": "https://cdn.motor1.com/images/mgl/YA7GEv/s1/audi-rs-q3-10-years.jpg",
-            "price": 570000,
-            "plate": "LVZ2036",
-            "color": "preto",
-            "releaseDate": "2022"
-        },
-        {
-            "mark": "Audi",
-            "model": "SQ5",
-            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2RVQLiQbhDU2YNV-ecwpg-qEhnselOrwHQA&s",
-            "price": 340000,
-            "plate": "LVZ2036",
-            "color": "vermelho",
-            "releaseDate": "2020"
-        },
+    {
+      "mark": "Aston Martin",
+      "model": "v12 Vantage S",
+      "image": "https://i.pinimg.com/736x/52/30/d1/5230d1bff65541b3da5a89fc5f4a3b6f.jpg",
+      "price": 265000,
+      "plate": "HUU0656",
+      "color": "prata",
+      "releaseDate": "2015 ",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Aston Martin",
+      "model": "V8",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/1978_Aston_Martin_V8_%28Series_3%29_5340_cc_at_Horsham_English_Festival_2018_a.jpg",
+      "price": 2000000,
+      "plate": "HUU0656",
+      "color": "prata",
+      "releaseDate": "2016",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Aston Martin",
+      "model": "DB9",
+      "image": "https://images.collectingcars.com/019609/main.jpg?w=1263&fit=fillmax&crop=edges&auto=format,compress&cs=srgb&q=85",
+      "price": 1800000,
+      "plate": "HUU0656",
+      "color": "prata",
+      "releaseDate": "2017",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Aston Martin",
+      "model": "DBX",
+      "image": "https://news.dupontregistry.com/wp-content/uploads/2023/07/2023-aston-martin-dbx-707-scaled.jpg",
+      "price": 1000000,
+      "plate": "HUU0656",
+      "color": "branca",
+      "releaseDate": "2024",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Aston Martin",
+      "model": "Rapide",
+      "image": "https://image1.mobiauto.com.br/images/api/images/v1.0/221386873/transform/fl_progressive,f_webp,q_80",
+      "price": 1300000,
+      "plate": "HUU0656",
+      "color": "preto",
+      "releaseDate": "2015",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Aston Martin",
+      "model": "Vanquish",
+      "image": "https://istoedinheiro.com.br/wp-content/uploads/sites/17/2019/09/din1138-cobica1.jpg",
+      "price": 1400000,
+      "plate": "HUU0656",
+      "color": "prata",
+      "releaseDate": "2015",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Volkswagen",
+      "model": "Golf",
+      "image": "https://cdn.motor1.com/images/mgl/y2pEzY/s3/vw-sondermodell-golf-edition-50.jpg",
+      "price": 180000,
+      "plate": "HUU0656",
+      "color": "azul",
+      "releaseDate": "2020",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus."
+    },
+    {
+      "mark": "Volkswagen",
+      "model": "Nivus",
+      "image": "https://cdn.motor1.com/images/mgl/8wbyv/s3/vw-nivus-highline-2020-superteste.jpg",
+      "price": 110000,
+      "plate": "AKD4519",
+      "color": "cinza",
+      "releaseDate": "2024",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Volkswagen",
+      "model": "Kombi",
+      "image": "https://quatrorodas.abril.com.br/wp-content/uploads/2016/11/57fd733a0e21630270073362qr-686-classicos-kombi-01.jpeg?quality=70&strip=all&strip=all",
+      "price": 50000,
+      "plate": "LVZ2036",
+      "color": "branca",
+      "releaseDate": "2014",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Volkswagen",
+      "model": "Fox",
+      "image": "https://i0.statig.com.br/bancodeimagens/7o/4w/e3/7o4we3mo5no2ck2b0j1t98bwm.jpg",
+      "price": 60000,
+      "plate": "LVZ2036",
+      "color": "branca",
+      "releaseDate": "2012",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Volkswagen",
+      "model": "Amarok",
+      "image": "https://quatrorodas.abril.com.br/wp-content/uploads/2020/11/QR_739_CARRO_AMAROK_V6-e1702318044633.jpg?quality=70&strip=info&w=720&h=440&crop=1",
+      "price": 230000,
+      "plate": "LVZ2036",
+      "color": "branca",
+      "releaseDate": "2014",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Volkswagen",
+      "model": "Fusca",
+      "image": "https://lartbr.com.br/wp-content/uploads/2023/05/IMG_0443.jpg",
+      "price": 20000,
+      "plate": "LVZ2036",
+      "color": "azul",
+      "releaseDate": "1977",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Audi",
+      "model": "A1",
+      "image": "https://cdn.motor1.com/images/mgl/e9vEV/s1/2019-audi-a1-sportback.jpg",
+      "price": 90000,
+      "plate": "LVZ2036",
+      "color": "branca",
+      "releaseDate": "2018",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Audi",
+      "model": "S7",
+      "image": "https://media.autoexpress.co.uk/image/private/s--X-WVjvBW--/f_auto,t_content-image-full-desktop@1/v1563184356/autoexpress/s7-front-tracking_0.jpg",
+      "price": 360000,
+      "plate": "LVZ2036",
+      "color": "prata",
+      "releaseDate": "2016",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Audi",
+      "model": "S8",
+      "image": "https://revistacarro.com.br/wp-content/uploads/2020/06/audi-s8-abt-2020.jpg",
+      "price": 670000,
+      "plate": "LVZ2036",
+      "color": "cinza",
+      "releaseDate": "2017",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Audi",
+      "model": "Q8",
+      "image": "https://cdn.motor1.com/images/mgl/NGOY1b/s1/audi-q8-2023.jpg",
+      "price": 600000,
+      "plate": "LVZ2036",
+      "color": "azul",
+      "releaseDate": "2023",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Audi",
+      "model": "RS Q3",
+      "image": "https://cdn.motor1.com/images/mgl/YA7GEv/s1/audi-rs-q3-10-years.jpg",
+      "price": 570000,
+      "plate": "LVZ2036",
+      "color": "preto",
+      "releaseDate": "2022",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Audi",
+      "model": "SQ5",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2RVQLiQbhDU2YNV-ecwpg-qEhnselOrwHQA&s",
+      "price": 340000,
+      "plate": "LVZ2036",
+      "color": "vermelho",
+      "releaseDate": "2020",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
 
-
-        {
-            "mark": "Hyundai",
-            "model": "Creta",
-            "image": "https://www.minutoseguros.com.br/blog/wp-content/uploads/2022/11/creta2.jpeg",
-            "price": 130000,
-            "plate": "LVZ2036",
-            "color": "preto",
-            "releaseDate": "2024"
-        },
-        {
-            "mark": "Hyundai",
-            "model": "Veracruz",
-            "image": "https://cdn.motor1.com/images/mgl/6xQbG/s1/4x3/hyundai-veracruz-sai-de-linha-na-coreia-do-sul-e-da-lugar-ao-santa-fe.webp",
-            "price": 60000,
-            "plate": "LVZ2036",
-            "color": "azul",
-            "releaseDate": "2012"
-        },
-        {
-            "mark": "Hyundai",
-            "model": "Santa Fe",
-            "image": "https://fotos-jornaldocarro-estadao.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2023/07/18131457/Santa-Fe.jpg",
-            "price": 220000,
-            "plate": "LVZ2036",
-            "color": "prata",
-            "releaseDate": "2020"
-        },
-        {
-            "mark": "Hyundai",
-            "model": "ix35",
-            "image": "https://cdn.motor1.com/images/mgl/PNyry/s1/hyundai-ix35-2017.webp",
-            "price": 110000,
-            "plate": "LVZ2036",
-            "color": "branca",
-            "releaseDate": "2022"
-        },
-        {
-            "mark": "Hyundai",
-            "model": "Azera",
-            "image": "https://quatrorodas.abril.com.br/wp-content/uploads/2017/02/qr-667-zero-hyundai-azera-01.jpg?quality=70&strip=info",
-            "price": 230000,
-            "plate": "LVZ2036",
-            "color": "prata",
-            "releaseDate": "2020"
-        },
-        {
-            "mark": "Hyundai",
-            "model": "Sonata",
-            "image": "https://cdn.motor1.com/images/mgl/NRjJb/s3/2021-hyundai-sonata-n-line-exterior-side.jpg",
-            "price": 70000,
-            "plate": "LVZ2036",
-            "color": "preto",
-            "releaseDate": "2014"
-        }
-
-
-
-    ]
+    {
+      "mark": "Hyundai",
+      "model": "Creta",
+      "image": "https://www.minutoseguros.com.br/blog/wp-content/uploads/2022/11/creta2.jpeg",
+      "price": 130000,
+      "plate": "LVZ2036",
+      "color": "preto",
+      "releaseDate": "2024",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Hyundai",
+      "model": "Veracruz",
+      "image": "https://cdn.motor1.com/images/mgl/6xQbG/s1/4x3/hyundai-veracruz-sai-de-linha-na-coreia-do-sul-e-da-lugar-ao-santa-fe.webp",
+      "price": 60000,
+      "plate": "LVZ2036",
+      "color": "azul",
+      "releaseDate": "2012",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Hyundai",
+      "model": "Santa Fe",
+      "image": "https://fotos-jornaldocarro-estadao.nyc3.cdn.digitaloceanspaces.com/wp-content/uploads/2023/07/18131457/Santa-Fe.jpg",
+      "price": 220000,
+      "plate": "LVZ2036",
+      "color": "prata",
+      "releaseDate": "2020",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Hyundai",
+      "model": "ix35",
+      "image": "https://cdn.motor1.com/images/mgl/PNyry/s1/hyundai-ix35-2017.webp",
+      "price": 110000,
+      "plate": "LVZ2036",
+      "color": "branca",
+      "releaseDate": "2022",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Hyundai",
+      "model": "Azera",
+      "image": "https://quatrorodas.abril.com.br/wp-content/uploads/2017/02/qr-667-zero-hyundai-azera-01.jpg?quality=70&strip=info",
+      "price": 230000,
+      "plate": "LVZ2036",
+      "color": "prata",
+      "releaseDate": "2020",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Hyundai",
+      "model": "Sonata",
+      "image": "https://cdn.motor1.com/images/mgl/NRjJb/s3/2021-hyundai-sonata-n-line-exterior-side.jpg",
+      "price": 70000,
+      "plate": "LVZ2036",
+      "color": "preto",
+      "releaseDate": "2014",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Mercedes",
+      "model": "C 180",
+      "image": "https://s2-autoesporte.glbimg.com/B26LUYEqZcezgVFYLYO_maYBi0E=/0x0:620x400/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_cf9d035bf26b4646b105bd958f32089d/internal_photos/bs/2020/L/B/3c87PRQmOchcONC6YD2A/2016-07-23-c180-2016.png",
+      "price": 80000,
+      "plate": "EVGA2431",
+      "color": "prata",
+      "releaseDate": "2014",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Mercedes",
+      "model": "E 250",
+      "image": "https://motorshow.com.br/wp-content/uploads/sites/2/2017/11/2_ms412_mercedes-benz-e-250_1.jpg",
+      "price": 70000,
+      "plate": "LVZ2036",
+      "color": "preto",
+      "releaseDate": "2014",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Mercedes",
+      "model": "GLA 200",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCHykEboEZsDOhGH-bwMY3vsfMiGHgBTrGIg&s",
+      "price": 70000,
+      "plate": "LVZ2036",
+      "color": "preto",
+      "releaseDate": "2014",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Mercedes",
+      "model": "CLS 350",
+      "image": "https://media.autoexpress.co.uk/image/private/s--X-WVjvBW--/f_auto,t_content-image-full-desktop@1/v1563182803/autoexpress/2018/08/01_29.jpg",
+      "price": 70000,
+      "plate": "LVZ2036",
+      "color": "preto",
+      "releaseDate": "2014",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Mercedes",
+      "model": "A 200",
+      "image": "https://quatrorodas.abril.com.br/wp-content/uploads/2023/07/classe-a-1-e1690492878192.webp?w=720&h=440&crop=1",
+      "price": 70000,
+      "plate": "LVZ2036",
+      "color": "preto",
+      "releaseDate": "2014",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    },
+    {
+      "mark": "Mercedes",
+      "model": "S 400",
+      "image": "https://as1.ftcdn.net/v2/jpg/04/39/26/30/1000_F_439263093_N7DDEjxkOsjCtcRCE0JCpnx23Lt0r8X5.jpg",
+      "price": 70000,
+      "plate": "LVZ2036",
+      "color": "preto",
+      "releaseDate": "2014",
+      "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quas magnam veritatis nemo libero. Veniam adipisci amet, officiis in omnis iusto delectus rerum, fuga beatae recusandae sequi atque sunt necessitatibus." 
+    }
+  ]
 }
